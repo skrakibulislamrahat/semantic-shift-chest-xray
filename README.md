@@ -1,5 +1,7 @@
 # Same Label, Different Disease
 
+> **Current manuscript release:** The final five-seed ensemble analysis, bootstrap result tables, Colab notebook, and figures for the provenance-aware chest radiograph manuscript are in [`paper_release/`](paper_release/README.md). The earlier summary tables below describe a prior exploratory version; use the paper release for the current manuscript.
+
 > **Research hub:** [Portfolio view](https://skrakibulislamrahat.github.io/#project-semantic-shift) · [Reproducibility guide](REPRODUCIBILITY.md) · [Validated results](RESULTS.md) · [Citation metadata](CITATION.cff)
 
 ## Semantic transport failure in pneumonia and lung-opacity classification across chest X-ray benchmarks

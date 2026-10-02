@@ -1,0 +1,19 @@
+source_task,target_task,files_found,seeds_found,n_test_images,positive_images,negative_images,positive_prevalence,patient_ids_available_for_all_images,bootstrap_cluster_count,target_subset,threshold_source
+Kaggle_Pneumonia,Kaggle_Pneumonia,5,"42,1337,2025,7,99",640,398,242,0.621875,False,640,test_split,source validation only
+Kaggle_Pneumonia,RSNA_LungOpacity,5,"42,1337,2025,7,99",3853,849,3004,0.22034778094990917,True,3853,test_split,source validation only
+Kaggle_Pneumonia,CheXpert_Pneumonia,5,"42,1337,2025,7,99",991,688,303,0.6942482341069627,True,859,test_split,source validation only
+Kaggle_Pneumonia,CheXpert_LungOpacity,5,"42,1337,2025,7,99",14611,13866,745,0.9490110190952022,True,5842,test_split,source validation only
+RSNA_LungOpacity,Kaggle_Pneumonia,5,"42,1337,2025,7,99",640,398,242,0.621875,False,640,test_split,source validation only
+RSNA_LungOpacity,RSNA_LungOpacity,5,"42,1337,2025,7,99",3853,849,3004,0.22034778094990917,True,3853,test_split,source validation only
+RSNA_LungOpacity,CheXpert_Pneumonia,5,"42,1337,2025,7,99",991,688,303,0.6942482341069627,True,859,test_split,source validation only
+RSNA_LungOpacity,CheXpert_LungOpacity,5,"42,1337,2025,7,99",14611,13866,745,0.9490110190952022,True,5842,test_split,source validation only
+CheXpert_Pneumonia,Kaggle_Pneumonia,5,"42,1337,2025,7,99",640,398,242,0.621875,False,640,test_split,source validation only
+CheXpert_Pneumonia,RSNA_LungOpacity,5,"42,1337,2025,7,99",3853,849,3004,0.22034778094990917,True,3853,test_split,source validation only
+CheXpert_Pneumonia,CheXpert_Pneumonia,5,"42,1337,2025,7,99",991,688,303,0.6942482341069627,True,859,test_split,source validation only
+CheXpert_Pneumonia,CheXpert_LungOpacity,5,"42,1337,2025,7,99",14611,13866,745,0.9490110190952022,True,5842,test_split,source validation only
+CheXpert_LungOpacity,Kaggle_Pneumonia,5,"42,1337,2025,7,99",640,398,242,0.621875,False,640,test_split,source validation only
+CheXpert_LungOpacity,RSNA_LungOpacity,5,"42,1337,2025,7,99",3853,849,3004,0.22034778094990917,True,3853,test_split,source validation only
+CheXpert_LungOpacity,CheXpert_Pneumonia,5,"42,1337,2025,7,99",991,688,303,0.6942482341069627,True,859,test_split,source validation only
+CheXpert_LungOpacity,CheXpert_LungOpacity,5,"42,1337,2025,7,99",14611,13866,745,0.9490110190952022,True,5842,test_split,source validation only
+
+
