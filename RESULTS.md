@@ -1,12 +1,8 @@
-# Historical Result Summary
+# Locked Result Summary
 
-> **This file describes an earlier exploratory analysis and is not the result table for the current manuscript.** The current manuscript's five-seed ensemble results, target-bootstrap intervals, and aggregate data files are in [paper_release/](paper_release/README.md), especially [the primary results CSV](paper_release/data/primary_patient_cluster_bootstrap_ensemble.csv).
+These values are copied from the finalized project result summary and define the primary claims for this repository.
 
-The values below are retained for project history only. They include earlier analyses of CheXpert consolidation and should not be cited as results for *Cross-Dataset Reliability of Chest Radiograph Models: Provenance-Aware Analytics and Implications for Microbiology*.
-
-## Earlier exploratory results
-
-### Nominal pneumonia transport
+## Nominal pneumonia transport
 
 **Kaggle Pneumonia → CheXpert Pneumonia**
 
@@ -15,7 +11,9 @@ The values below are retained for project history only. They include earlier ana
 - ECE-15: **0.234**
 - HCER@0.90: **0.199**
 
-### Earlier opacity/consolidation comparisons
+This result supports weak cross-dataset transport despite a nominally similar pneumonia label.
+
+## Opacity-aligned transport
 
 **CheXpert Lung Opacity → CheXpert Consolidation**
 
@@ -31,4 +29,33 @@ The values below are retained for project history only. They include earlier ana
 - ECE-15: **0.112**
 - HCER@0.90: **0.026**
 
-These exploratory analyses do not establish that similarly named labels are clinically interchangeable or that any model is ready for patient-care use.
+These results support stronger transport when source/target semantics are aligned around opacity/consolidation.
+
+## High-confidence failure under transport
+
+**Kaggle Pneumonia → RSNA Lung Opacity**
+
+- AUROC: **0.802**
+- Balanced accuracy: **0.657**
+- ECE-15: **0.476**
+- HCER@0.90: **0.337**
+
+**Kaggle Pneumonia → CheXpert Consolidation**
+
+- AUROC: **0.830**
+- Balanced accuracy: **0.621**
+- ECE-15: **0.407**
+- HCER@0.90: **0.325**
+
+These experiments show that reasonable discrimination can coexist with severe probability/reliability failure after transport.
+
+## Interpretation guardrails
+
+The project does **not** support claims that:
+
+- pneumonia AI universally fails;
+- one dataset is clinically superior to another;
+- similarly named labels are necessarily equivalent;
+- CheXpert Composite is a primary benchmark result.
+
+Thresholds used for operating-point transfer were selected using source validation predictions only. Target labels were not used for threshold tuning.
